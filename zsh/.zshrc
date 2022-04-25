@@ -1,7 +1,8 @@
-
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 export TERM='xterm-256color' 
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+ export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sguenther/.oh-my-zsh"
@@ -12,7 +13,8 @@ export ZSH="/home/sguenther/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-   ZSH=/Users/sguenther/.oh-my-zsh/
+ alias ibrew='arch -x86_64 /usr/local/bin/brew'
+ ZSH=/Users/sguenther/.oh-my-zsh/
 fi
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -106,3 +108,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(starship init zsh)"
 cd ~/
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"

@@ -39,7 +39,9 @@ window:
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
+  alt_send_esc: false 
 
+  live_config_reload: true
   # Window decorations
   #
   # Values for `decorations`:
@@ -109,8 +111,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Fira Code
-      #family: JetBrainsMono Nerd Font
+    family: SauceCodePro Nerd Font
+    # family: JetBrainsMono Nerd Font
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -121,7 +123,7 @@ font:
     # family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: normal
+    style: Regular
 
   # Bold font face
   bold:
@@ -129,7 +131,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code 
+    family: Fira Code
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -148,7 +150,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code
+    family: Menlo
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -159,7 +161,7 @@ font:
     # family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Italic
+    style: Regular
 
   # Bold italic font face
   bold_italic:
@@ -167,7 +169,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Fira Code
+    family: Menlo
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -178,10 +180,10 @@ font:
     # family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+    style: Regular
 
   # Point size
-  size: 12
+  size: 15
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
